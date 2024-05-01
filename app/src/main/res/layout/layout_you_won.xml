@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background3"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/trophy"
+       />
+
+    <TextView
+
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+       android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/kennyblocks"
+        android:text="@string/congratulations"
+        android:textAlignment="center"
+        android:textStyle="bold|italic"
+        android:textColor="#F44336"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/you_have_successfully_completed_the_game"
+        android:textAlignment="center"
+        android:fontFamily="@font/kennypixelsquare"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/dId"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="@font/kennyblocks"
+        android:layout_marginTop="60dp"
+        android:text="@string/back_to_main_page"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textAlignment="center"
+        android:onClick="startGame" />
+
+</LinearLayout>
+
+
+
+

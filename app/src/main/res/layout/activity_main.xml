@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background3" />
+
+
+    <TextView
+        android:id="@+id/highScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="-86dp"
+
+        android:fontFamily="@font/kennyblocks"
+        android:text="@string/high_score_0"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/kennyblocks"
+        android:text="@string/score_0"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        tools:ignore="DuplicateIds" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="100dp">
+
+        <View
+            android:id="@+id/paddle"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="#E8E8E8"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:id="@+id/ball"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle"
+            android:layout_above="@id/paddle"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/brickContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ball"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/trophyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="Congratulations! Click to claim your trophy"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/newgame"
+            android:layout_width="212dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:textSize="20sp"
+            android:fontFamily="@font/kennyblocks"
+            android:text="@string/new_game" />
+
+        <TextView
+            android:id="@+id/gameOverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newgame"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/game_over"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:fontFamily="@font/kennypixelsquare"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/scoreAfterGameOverText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gameOverText"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:fontFamily="@font/kennypixelsquare"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/kennyblocks"
+            android:text="@string/score_01"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            tools:ignore="DuplicateIds" />
+
+        <View
+            android:id="@+id/barrier"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/black"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

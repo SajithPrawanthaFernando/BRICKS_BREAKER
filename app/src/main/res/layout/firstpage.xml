@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background3"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/kennypixelsquare"
+            android:text="@string/bricks_breaker"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            android:textColor="#F44336"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/sId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:fontFamily="@font/kennyblocks"
+            android:layout_marginTop="100dp"
+            android:text="@string/start"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:onClick="startGame" />
+
+    </LinearLayout>
+
+
+
+

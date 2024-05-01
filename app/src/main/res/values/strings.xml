@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application8</string>
+    <string name="bricks_breaker">BRICKS BREAKER</string>
+    <string name="you_have_successfully_completed_the_game">You have successfully completed the game</string>
+    <string name="back_to_main_page">Back to main page</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="congratulations_click_to_claim_your_trophy">Congratulations! Click to claim your trophy</string>
+    <string name="high_score_0">High Score: 0</string>
+    <string name="score_0">Score: 0</string>
+    <string name="new_game">New Game</string>
+    <string name="game_over">Game Over</string>
+    <string name="score_01">Score: 0</string>
+    <string name="start">Start</string>
+</resources>
